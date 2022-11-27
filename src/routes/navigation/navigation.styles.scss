@@ -1,0 +1,12 @@
+.Navigation{
+    height: 80px;
+    width: 100% - padding;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    .nav-links{
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+    }
+}

@@ -1,12 +1,77 @@
-.Navigation{
-    height: 80px;
-    width: 100% - padding;
+.NavigationCover{
+    height: 100px;
+    width: 100%;
+    backdrop-filter: blur(100px);
+    position: fixed;
+    z-index: 300;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navigation{
+    height: 60px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 0px 50px;
+    line-height: 100%;
+    background-color: #171717;
+    border: 0px;
     .nav-links{
         display: flex;
         justify-content: space-between;
-        width: 30%;
+        width: 40%;
+        font-size: 18px;
+        vertical-align: middle;
+        font-weight: 700;
+    }
+    .link-name{
+        font-size: 18px;
+        color: white;
+    }
+}
+
+.SideBar{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 250px;
+    background-color: black;
+    color: black;
+    top: 120px;
+    .nav-links{
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        vertical-align: middle;
+        font-weight: 700;
+    }
+    .nav-links-container{
+        font-size: 20px;
+        margin-left: 30px;
+        margin-bottom: 8px;
+    }
+    .section-title{
+        font-size: 33px;
+        color: white;
+        margin: 10px 20px;
+        font-weight: 500;
+    }
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+a{
+    color: whitesmoke;
+    &:hover, &:focus, &:active {
+        color: #D2BF37 ;
     }
 }

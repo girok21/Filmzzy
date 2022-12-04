@@ -10,7 +10,6 @@ const SearchBox = ()=>{
                 placeholder = 'Search for a Movie or TV-Show'
                 // onClick={onCLickHandler}
             />}
-            <button>Search</button> 
         </Fragment>
     )
 }

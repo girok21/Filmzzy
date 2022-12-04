@@ -4,8 +4,6 @@ import SearchBox from '../../components/search-box/search-box.component';
 
 import './navigation.styles.scss';
 const NavigationBar = () => {
-
-
     return(
         <Fragment>
             <div className='NavigationCover'>

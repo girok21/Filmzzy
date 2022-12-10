@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-/.env
+.env
 
 # testing
 /coverage
@@ -12,8 +12,8 @@
 # production
 /build
 
-# #API_KEY
-# .env
+#API_KEY
+.env
 
 # misc
 .DS_Store

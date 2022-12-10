@@ -78,13 +78,16 @@ export const ShowsProvider = ({children})=>{
         return() => window.removeEventListener("scroll", handleScroll);
     })
 
-    // const addGenreList = (id)=>{
-    //     if(selectedGenreList.includes(id)){
-    //         setSelectedGenreList(selectedGenreList.splice(setSelectedGenreList.indexOf(id), 1));
-    //     }else{
-    //         selectedGenreList(prev => [...prev, id])
-    //     }
-    // }
+    const addGenreList = (id)=>{
+        if(selectedGenreList.includes(id)){
+            setSelectedGenreList(prev => {
+                prev.splice(prev.indexOf(id), 1);
+                return prev;
+            });
+        }else{
+            setSelectedGenreList(prev => [...prev, id])
+        }
+    }
     const value = {
         showsList,
         loading,
@@ -95,7 +98,7 @@ export const ShowsProvider = ({children})=>{
         resetValues,
         showCategory,
         setShowCategory,
-        // addGenreList,
+        addGenreList,
         selectedGenreList, 
         genresList
     };

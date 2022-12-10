@@ -1,11 +1,13 @@
-.movies-container{
+.shows-catalogue{
     display: inline-block;
     justify-content: center;
     margin-top: 120px;
     margin-left: 250px;
+    margin-bottom: 150px;
+    position: relative;
     .loading-icon{
         display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
+        position: absolute;
+        left: 50%;
     }
 }

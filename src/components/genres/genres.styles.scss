@@ -1,0 +1,17 @@
+.genres-container{
+    padding: 0px 10px;
+    max-height: 200px;
+    overflow: auto;
+    .genre-container{
+        font-size: 15px;
+        color: white;
+        display: inline-block;
+        margin: 3px;
+        padding: 5px;
+        cursor: pointer;
+        // background-color: #D2BF37 ;
+        border-radius: 1rem;
+        border-color: #D2BF37;
+        border-style: solid;
+    }
+}

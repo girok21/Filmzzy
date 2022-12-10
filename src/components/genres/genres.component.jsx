@@ -1,21 +1,20 @@
-import React, { useContext } from 'react';
+import React, { useContext, useCallback, Fragment } from 'react';
 import { ShowsContext } from '../../contexts/shows.context';
-
+import Genre from './genre.component.jsx'
 import './genres.styles.scss';
 
 const Genres = ({GenresList})=>{
     const {selectedGenreList} = useContext(ShowsContext);
-    // const onClickHandler = (abc)=>{
-    //     console.log(abc, selectedGenreList)          onClick={()=>{onClickHandler(genre)}}
-    // }
+    const onClickHandler = (genre)=>{
+        console.log(genre)
+    };
     return(
-        <>
+        <Fragment>
             {GenresList && <div className="genres-container">
-                {GenresList.map((genre) => <div className = 'genre-container' key = {genre.id} >
-                        <span className='genre-title'>{genre.name}</span>
-                </div>)}
+                {GenresList.map((genre) => <Genre genre={genre}/>)
+                }
             </div>}
-        </>
+        </Fragment>
     )
 }
 
